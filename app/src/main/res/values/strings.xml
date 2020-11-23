@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tareaaplicacion</string>
+    <string name="hint_correo">Correo</string>
+    <string name="hint_password">Password</string>
+    <string name="buttonText_ingresar">Ingresar</string>
+    <string name="text_email_admin">email: admin@mail.com</string>
+    <string name="text_contrasena_admin">Contraseña: admin</string>
+</resources>
