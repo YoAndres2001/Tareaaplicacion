@@ -13,8 +13,7 @@
     // Layout Activity_crudindex
     <string name="app_index_registar_vehiculo">Registar Vehiculo</string>
     <string name="app_index_modificar_vehiculo">Modificar Vehiculo</string>
-    <string name="app_index_buscar_vehiculo">Buscar Vehiculo</string>
-    <string name="app_index_eliminar_vehiculo">Eliminar Vehiculo</string>
+    <string name="app_buscar_o_eliminar_vehiculo">Buscar o Eliminar Vehiculo</string>
 
     // Layout Activity_crud_registrar y modificar
     <string name="app_VehiculoID">ID de vehiculo</string>
@@ -25,7 +24,7 @@
     <string name="app_btt_Registrar">Registrar</string>
     <string name="app_btt_Modificar">Modificar</string>
 
-    // Layout Activity_crudbuscar
+    // Layout Activity_crudbuscar y eliminar
     <string name="app_Buscar_ID">Ingrese ID del vehiculo a buscar</string>
     <string name="app_btt_Buscar">Buscar</string>
     <string name="app_Buscar_Propietario">Dueño</string>
@@ -33,13 +32,10 @@
     <string name="app_Buscar_Fecha">Fecha de ingreso</string>
 
 
-    // Layout Activity_crud_eliminar
-    <string name="app_Eliminar_Vehiculo">Ingrese el ID del vehiculo a eliminar</string>
-    <string name="app_btt_Eliminar">Eliminar</string>
-
 
     // Cancelar
     <string name="app_cancelar">Cancelar</string>
+    <string name="app_eliminar">Eliminar</string>
 
 
 </resources>

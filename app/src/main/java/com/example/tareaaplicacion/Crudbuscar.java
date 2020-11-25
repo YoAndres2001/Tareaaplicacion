@@ -48,6 +48,31 @@ public class Crudbuscar extends AppCompatActivity {
         db.close();
     }
 
+    public void EliminarVehiculo(View view){
+        GestorBD gestor = new GestorBD(this, "Vehiculo", null, 1);
+        SQLiteDatabase db = gestor.getWritableDatabase();
+
+        String id = edtDetalle_id.getText().toString();
+
+        if (!id.isEmpty()){
+            int filas = db.delete("vehiculo", "id=" + id,null);
+
+            if (filas == 1){
+                Toast.makeText(this, "Se ha eliminado el vehiculo", Toast.LENGTH_LONG).show();
+                db.close();
+                txtDetalle_propietario.setText("Dueño");
+                txtDetalle_patente.setText("Patente");
+                txtDetalle_fecha.setText("Fecha de ingreso");
+                edtDetalle_id.setText("");
+            }else {
+                Toast.makeText(this, "Ha ocurrido un error", Toast.LENGTH_SHORT).show();
+            }
+        }
+        db.close();
+    }
+
+
+
     public void Cancelar(View view){
         Intent Cancelar = new Intent(this, Crudindex.class);
         startActivity(Cancelar);

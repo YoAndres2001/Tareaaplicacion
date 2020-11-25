@@ -12,6 +12,8 @@
 
     //Ingresar Id
 
+    //Boton de buscar Vehiculo
+
     <ImageView
         android:id="@+id/icon_logo"
         android:layout_width="260dp"
@@ -23,9 +25,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
-
-    //Boton de buscar Vehiculo
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/edtDetalle_id"
@@ -57,6 +57,26 @@
         app:layout_constraintVertical_bias="0.0"
         android:onClick="BuscarVehiculo"
         />
+
+    <Button
+        android:id="@+id/btt_eliminar_vehiculoID"
+        android:text="@string/app_eliminar"
+        style="@style/AppTheme.Button"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_style"
+        android:onClick="EliminarVehiculo"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btt_buscar_vehiculoID"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+
     //Boton de Cancelar
     <Button
         android:id="@+id/ButtonCancelar"
@@ -72,7 +92,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btt_buscar_vehiculoID"
+        app:layout_constraintTop_toBottomOf="@+id/btt_eliminar_vehiculoID"
         app:layout_constraintVertical_bias="0.0"
 
         />

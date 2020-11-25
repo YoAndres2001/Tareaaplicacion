@@ -28,9 +28,4 @@ public class Crudindex extends AppCompatActivity {
         Intent ActivityBuscar = new Intent(this, Crudbuscar.class);
         startActivity(ActivityBuscar);
     }
-
-    public void GoToEliminar (View view){
-        Intent ActivityEliminar = new Intent(this, CrudEliminar.class);
-        startActivity(ActivityEliminar);
-    }
 }

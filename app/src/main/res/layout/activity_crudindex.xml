@@ -24,26 +24,26 @@
     />
 
     //Boton de Registrar Vehiculo
-    <Button
-        android:id="@+id/btt_registrar_vehiculo"
-        android:text="@string/app_index_registar_vehiculo"
-        style="@style/AppTheme.Button"
-        android:layout_marginTop="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_style"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/icon_logo"
-        app:layout_constraintVertical_bias="0.1"
-
-        android:onClick="GoToRegistrar"
-    />
 
     //Boton de modificar Vehiculo
+
+    <Button
+        android:id="@+id/btt_registrar_vehiculo"
+        style="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_style"
+        android:onClick="GoToRegistrar"
+
+        android:text="@string/app_index_registar_vehiculo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_logo"
+
+        app:layout_constraintVertical_bias="0.201" />
+
     <Button
         android:id="@+id/btt_modificar_vehiculo"
         android:text="@string/app_index_modificar_vehiculo"
@@ -64,45 +64,23 @@
     />
 
     //Boton de buscar Vehiculo
+
     <Button
         android:id="@+id/btt_buscar_vehiculo"
-        android:text="@string/app_index_buscar_vehiculo"
         style="@style/AppTheme.Button"
-        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:background="@drawable/btn_style"
+        android:onClick="GoToBuscar"
 
+        android:text="@string/app_buscar_o_eliminar_vehiculo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btt_modificar_vehiculo"
-        app:layout_constraintVertical_bias="0.0"
 
-        android:onClick="GoToBuscar"
-    />
-
-    //Boton de eliminar Vehiculo
-    <Button
-        android:id="@+id/btt_eliminar_vehiculo"
-        android:text="@string/app_index_eliminar_vehiculo"
-        style="@style/AppTheme.Button"
-        android:layout_marginTop="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_style"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btt_buscar_vehiculo"
-        app:layout_constraintVertical_bias="0.0"
-
-        android:onClick="GoToEliminar"
-    />
-
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
