@@ -5,79 +5,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/colorTercero">
+    android:background="@drawable/fondo"
+    >
 
-
+    //Logo
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="Logo de indriver"
-        android:src="@drawable/logoindriver"
+        android:id="@+id/icon_logo"
+        android:layout_width="260dp"
+        android:layout_height="160dp"
+        android:src="@drawable/iconlogo"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintVertical_bias="0.097"
+    />
 
+    //Ingresar Correo
     <EditText
-        android:id="@+id/editText_Correo"
-        style="@style/AppTheme.Texts"
+        android:id="@+id/edtMain_email"
+        style="@style/AppTheme.EditText"
+        android:hint="@string/app_email"
+        android:drawableStart="@drawable/ic_baseline_email_24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/ic_baseline_email_24"
-        android:hint="@string/hint_correo"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="200dp"
+        app:backgroundTint="@color/colorBlanco"
+        app:layout_constraintTop_toTopOf="@+id/icon_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.043" />
+        app:layout_constraintHorizontal_bias="0.0"
+        android:inputType="textEmailAddress"
+    />
 
+    //Ingresar Contraseña
     <EditText
-        android:id="@+id/editText_Password"
-        style="@style/AppTheme.Texts"
+        android:id="@+id/edtMain_password"
+        style="@style/AppTheme.EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/ic_baseline_vpn_key_24"
-        android:hint="@string/hint_password"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:drawableEnd="@drawable/icon_eyes"
+        android:hint="@string/app_password"
+        android:layout_marginTop="32dp"
+        app:backgroundTint="@color/colorBlanco"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.68"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Correo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/edtMain_email"
+        android:inputType="textPassword"
+    />
 
+    // Boton Iniciar Sesión
     <Button
-        android:id="@+id/button_ingresar"
-        style="@style/AppTheme.Botones"
+        android:id="@+id/bttlogin"
+        android:text="@string/app_login"
+        style="@style/AppTheme.Button"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/buttonText_ingresar"
+        android:background="@drawable/btn_style"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Password"
-        app:layout_constraintVertical_bias="0.086"
-        android:onClick="irACrudIndex"/>
+        app:layout_constraintTop_toBottomOf="@+id/edtMain_password"
+        app:layout_constraintVertical_bias="0.2"
 
+
+        android:onClick="irACrudIndex"
+    />
+
+    // Texto con datos de email
     <TextView
         android:id="@+id/textView_email"
-        style="@style/AppTheme.txtChicos"
+        style="@style/AppTheme.Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_email_admin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_ingresar"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintTop_toBottomOf="@+id/bttlogin"
+        app:layout_constraintVertical_bias="0.224"
+    />
 
+    // Texto con datos de contraseña
     <TextView
         android:id="@+id/txtView_pass"
-        style="@style/AppTheme.txtChicos"
+        style="@style/AppTheme.Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
@@ -87,5 +106,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_email"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>

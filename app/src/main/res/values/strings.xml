@@ -1,8 +1,45 @@
 <resources>
     <string name="app_name">Tareaaplicacion</string>
-    <string name="hint_correo">Correo</string>
-    <string name="hint_password">Password</string>
-    <string name="buttonText_ingresar">Ingresar</string>
+
+
+    // Layout Activity_main
+    <string name="app_email">Ingrese su correo</string>
+    <string name="app_password">Ingresa su contraseña</string>
+    <string name="app_login">Iniciar Sesión</string>
+    <string name="app_register">Registrarse</string>
     <string name="text_email_admin">email: admin@mail.com</string>
     <string name="text_contrasena_admin">Contraseña: admin</string>
+
+    // Layout Activity_crudindex
+    <string name="app_index_registar_vehiculo">Registar Vehiculo</string>
+    <string name="app_index_modificar_vehiculo">Modificar Vehiculo</string>
+    <string name="app_index_buscar_vehiculo">Buscar Vehiculo</string>
+    <string name="app_index_eliminar_vehiculo">Eliminar Vehiculo</string>
+
+    // Layout Activity_crud_registrar y modificar
+    <string name="app_VehiculoID">ID de vehiculo</string>
+    <string name="app_Propietario">Dueño</string>
+    <string name="app_Patente">Patente</string>
+    <string name="app_Fecha">Fecha de ingreso</string>
+
+    <string name="app_btt_Registrar">Registrar</string>
+    <string name="app_btt_Modificar">Modificar</string>
+
+    // Layout Activity_crudbuscar
+    <string name="app_Buscar_ID">Ingrese ID del vehiculo a buscar</string>
+    <string name="app_btt_Buscar">Buscar</string>
+    <string name="app_Buscar_Propietario">Dueño</string>
+    <string name="app_Buscar_Patente">Patente</string>
+    <string name="app_Buscar_Fecha">Fecha de ingreso</string>
+
+
+    // Layout Activity_crud_eliminar
+    <string name="app_Eliminar_Vehiculo">Ingrese el ID del vehiculo a eliminar</string>
+    <string name="app_btt_Eliminar">Eliminar</string>
+
+
+    // Cancelar
+    <string name="app_cancelar">Cancelar</string>
+
+
 </resources>

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CrudOperaciones"></activity>
+        <activity android:name=".CrudEliminar"></activity>
+        <activity android:name=".CrudModificar" />
+        <activity android:name=".CrudRegistrar" />
+        <activity android:name=".CrudOperaciones" />
         <activity android:name=".Crudbuscar" />
         <activity android:name=".Crudindex" />
         <activity android:name=".MainActivity">

@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editText_Correo = findViewById(R.id.editText_Correo);
-        editText_Password = findViewById(R.id.editText_Password);
+        editText_Correo = findViewById(R.id.edtMain_email);
+        editText_Password = findViewById(R.id.edtMain_password);
 
     }
 

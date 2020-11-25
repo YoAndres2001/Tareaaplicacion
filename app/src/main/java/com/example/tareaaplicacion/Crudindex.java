@@ -14,13 +14,23 @@ public class Crudindex extends AppCompatActivity {
         setContentView(R.layout.activity_crudindex);
     }
 
-    public void IrAOperacionesCRUD(View view){
-        Intent activitycrudoperaciones = new Intent(this, CrudOperaciones.class);
-        startActivity(activitycrudoperaciones);
+    public void GoToRegistrar(View view){
+        Intent ActivityRegistrar = new Intent(this, CrudRegistrar.class);
+        startActivity(ActivityRegistrar);
     }
 
-    public void IrABuscar (View view){
-        Intent activitybuscaroperaciones = new Intent(this, Crudbuscar.class);
-        startActivity(activitybuscaroperaciones);
+    public void GoToModificar(View view){
+        Intent ActivityModificar = new Intent(this, CrudModificar.class);
+        startActivity(ActivityModificar);
+    }
+
+    public void GoToBuscar (View view){
+        Intent ActivityBuscar = new Intent(this, Crudbuscar.class);
+        startActivity(ActivityBuscar);
+    }
+
+    public void GoToEliminar (View view){
+        Intent ActivityEliminar = new Intent(this, CrudEliminar.class);
+        startActivity(ActivityEliminar);
     }
 }
